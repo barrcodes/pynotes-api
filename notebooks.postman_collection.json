@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "aff55ad1-7e65-44e2-9aaf-6927dd1fa48d",
+		"name": "notebooks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14939455"
+	},
+	"item": [
+		{
+			"name": "notebooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notebook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notebook",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notebook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"my notebook\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notebook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"my notebook 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}/categories",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}/categories/{{categoryId}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}",
+						"categories",
+						"{{categoryId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}/categories/{{categoryId}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}",
+						"categories",
+						"{{categoryId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"category3\",\n    \"parent_id\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}/categories",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"myCategory2\",\n    \"parent_id\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}/categories/{{categoryId}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}",
+						"categories",
+						"{{categoryId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}/notes",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}",
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "note",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}/notes/{{noteId}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}",
+						"notes",
+						"{{noteId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "note",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}/notes/{{noteId}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}",
+						"notes",
+						"{{noteId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "note",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"category_id\": 4,\n    \"title\": \"yet another note\",\n    \"content\": \"some text\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}/notes",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}",
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "note",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"a note\",\n    \"content\": \"some text\",\n    \"category_id\": 4,\n    \"pinned\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/v1/notebooks/{{notebookId}}/notes/{{noteId}}",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"notebooks",
+						"{{notebookId}}",
+						"notes",
+						"{{noteId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
